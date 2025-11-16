@@ -31,6 +31,9 @@ def mul(a, b): return a * b
 def div(a, b): #b / a # raise ZeroDivisionError if a == 0
     if a == 0:
         raise ZeroDivisionError("You can't divide by zero.")
+    
+    else:
+        return a / b
 
 def log(a, b): #loga(b)# use math library + raise ValueError
     try:
