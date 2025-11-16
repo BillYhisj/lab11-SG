@@ -1,4 +1,19 @@
 import math
+
+def add(a, b): return a + b
+
+def subtract(a, b): return a - b
+
+def multiply(a, b): return a * b
+
+def logarithm(a, b): #loga(b) use math library/raise ValueError
+    if a < 0 or b < 0:
+         raise ValueError("math domain error")
+    else:
+        return math.log(b,a)
+
+def exponent(a, b): return a**b
+
 def add(a, b): a + b
 
 def sub(a, b): a - b
