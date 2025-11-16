@@ -1,25 +1,18 @@
 import math
+def add(a, b): a + b
 
-def add(a, b): return a + b
+def sub(a, b): a - b
 
-def subtract(a, b): return a - b
+def mul(a, b): a * b
 
-def multiply(a, b): return a * b
-
-def divide(a, b): # b / a
+def div(a, b): #b / a # raise ZeroDivisionError if a == 0
     if a == 0:
-        raise ZeroDivisionError("You can not divide a number by zero")
-    else:
-        return b / a
+        raise ZeroDivisionError("You can't divide by zero.")
 
-def logarithm(a, b): #loga(b) use math library/raise ValueError
-    if a < 0 or b < 0:
-         raise ValueError("math domain error")
-    else:
-        return math.log(b,a)
+def log(a, b): #loga(b)# use math library + raise ValueError
+    try:
+        math.log(b,a)
+    except Exception as e:
+        raise ValueError(e)
 
-def exponent(a, b): return a**b
-
-
-
-
+def exp(a, b): a**b
