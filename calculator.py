@@ -1,3 +1,8 @@
+# https://github.com/BillYhisj/lab11-SG
+# Partner 1: Sebastian Gil
+# Partner 2: Sebastian Gil
+# Note: Partner got permission from TA to do assignment alone so I completed it without a group member.
+
 import math
 
 def square_root(a): # raise ValueError if a < 0
