@@ -14,11 +14,10 @@ def logarithm(a, b): #loga(b) use math library/raise ValueError
 
 def exponent(a, b): return a**b
 
-def add(a, b): a + b
 
-def sub(a, b): a - b
+def sub(a, b): return a - b
 
-def mul(a, b): a * b
+def mul(a, b): return a * b
 
 def div(a, b): #b / a # raise ZeroDivisionError if a == 0
     if a == 0:
@@ -26,8 +25,8 @@ def div(a, b): #b / a # raise ZeroDivisionError if a == 0
 
 def log(a, b): #loga(b)# use math library + raise ValueError
     try:
-        math.log(b,a)
+        return math.log(b,a)
     except Exception as e:
         raise ValueError(e)
 
-def exp(a, b): a**b
+def exp(a, b): return a**b
